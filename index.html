@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NICHESDELUXE</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEU+rjAAAAA/sTFBtjIhWxlAszE0kigOJws6oSwWPREIFgY8qC42mCoqdyAmah4GEgUugCMNJAoYQhMzjicSMg4och8UNg8ECwMobh4fVRgxiSYJGwc4nSwJGQcbSxUtfCLSHp2zAAABHElEQVR4nO3ayQ6CMABF0VosDoizOMv//6W6sia+JmqrNd6DCxct3DQGImAMAAAAAAAAgCcVy45UqUl2pCetbISogdz9MBA1kbNqoogiiiiiiCKKqMdRLseoLFeKKKL+IopTwiejGrn7tXFCEfgzGiPKbbpSO1VqOWe7ixBlXKGYvVyORs+K8DsPqWYyapD2yEQRRRRRRL3P3rhA1Ny6y3b9XL8kbqoOnlJHNQtPmbbJLmRGwLGfNMqVr0T1iCKKKKKIIupno2yOUVmuFFFEEUUUUUQldH9B7o2VzelrKzVXN8td0X4vSo+riSKKKKKI+qUofQf/Pmqf+IJ88J9Rr/S4Ue1p5asCsbJ8gWH+CwExHq8DAAAAAAAAyM0ZkDomhL8B6mIAAAAASUVORK5CYII="
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1>
+      <span class="WAOS">NICH</span><span class="SER">ESDE</span
+      ><span class="VER">LUXE</span>
+    </h1>
+
+    <div class="container">
+      <div class="tabs-container">
+        <button class="tab" onclick="openTab('content1')">CONTENIDOS</button>
+        <button class="tab" onclick="openTab('content2')">TUTORIALES</button>
+        <button class="tab" onclick="openTab('content3')">ADICIONAL</button>
+      </div>
+
+      <div class="content" id="content1">
+        <h2><i>Archivos e Informacion Necesaria:</i></h2>
+
+        <hr color="green" />
+
+        <ul id="linkList">
+          <li>
+            <h3>Minecraft Bedrock (v1.20.51):</h3>
+
+            <a
+              href="https://www.mediafire.com/file/prn21sivxfhoa1c/minecraft-1-20-51.apk/file"
+              class="pagina1"
+              target="_blank"
+              ><b>DESCARGAR</b></a
+            >
+          </li>
+
+          <hr color="green" />
+
+          <li>
+            <h3>Cliente Optimizado Bedrock (Red Dragon):</h3>
+            <a
+              href="https://www.mediafire.com/file/ac2mrgtrgs8kr2n/RDO1.mcpack/file"
+              class="pagina2"
+              target="_blank"
+              ><b>DESCARGAR</b></a
+            >
+
+            <hr color="green" />
+          </li>
+          <h3>Informacion De Nuestro Servidor:</h3>
+
+          <a
+            href="https://pastebin.com/nes4EVVp"
+            class="pagina3"
+            target="_blank"
+            ><b>IR AL SITIO</b></a
+          >
+        </ul>
+      </div>
+
+      <div class="content" id="content2" style="display: none">
+        <h2>Contenido de la Categoria 2</h2>
+        <p>Texto o elementos que deseas mostrar para la Categoria 2.</p>
+      </div>
+
+      <div class="content" id="content3" style="display: none">
+        <h2>Contenido de la Categoria 3</h2>
+        <p>Texto o elementos que deseas mostrar para la Categoria 3.</p>
+      </div>
+    </div>
+
+    <script src="logica.js"></script>
+  </body>
+</html>

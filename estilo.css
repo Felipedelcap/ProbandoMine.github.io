@@ -1,0 +1,146 @@
+body::before {
+  content: "";
+  background-image: url("https://i.pinimg.com/originals/a6/f9/93/a6f993903ed579b0e7cc4d49867bfcfe.jpg");
+  background-size: cover;
+  filter: blur(3px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: #351908cb;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.WAOS {
+  color: #0000ff;
+}
+
+.SER {
+  color: #ffffff;
+}
+
+.VER {
+  color: #ff1900;
+}
+
+.container {
+  overflow-x: hidden;
+  position: relative;
+  font-family: Orbitron;
+  text-align: center;
+  background-color: #35190894;
+  padding: 30px;
+  border-radius: 5px;
+  width: 450px;
+  height: 450px;
+  overflow-y: auto;
+  height: calc(100vh - 40px);
+  margin-top: 40px;
+  
+}
+
+.container::before {
+  content: "";
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+h2 {
+  font-size: 25px;
+  color: #a200ff;
+}
+
+#linkList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#linkList li {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background: url("https://addons-media.operacdn.com/media/CACHE/images/themes/95/72895/1.0-rev1/images/93ccab91-6074-4c33-8e46-e595084a0d4e/0dfd2182106b1095cc52bd11ba596698.jpg");
+  background-size: cover;
+  transition: background-color 0.6s ease, transform 0.6s ease;
+  display: inline-block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.tabs-container {
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.tab {
+  background-color: #0c8108;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+  background-color: #003cff;
+  
+}
+
+.content {
+  display: none;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.content.active {
+  display: block;
+}
