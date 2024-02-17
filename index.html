@@ -1,81 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NICHESDELUXE</title>
-    <link rel="stylesheet" href="estilo.css"/>
-    <link
-      rel="icon"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEU+rjAAAAA/sTFBtjIhWxlAszE0kigOJws6oSwWPREIFgY8qC42mCoqdyAmah4GEgUugCMNJAoYQhMzjicSMg4och8UNg8ECwMobh4fVRgxiSYJGwc4nSwJGQcbSxUtfCLSHp2zAAABHElEQVR4nO3ayQ6CMABF0VosDoizOMv//6W6sia+JmqrNd6DCxct3DQGImAMAAAAAAAAgCcVy45UqUl2pCetbISogdz9MBA1kbNqoogiiiiiiCKKqMdRLseoLFeKKKL+IopTwiejGrn7tXFCEfgzGiPKbbpSO1VqOWe7ixBlXKGYvVyORs+K8DsPqWYyapD2yEQRRRRRRL3P3rhA1Ny6y3b9XL8kbqoOnlJHNQtPmbbJLmRGwLGfNMqVr0T1iCKKKKKIIupno2yOUVmuFFFEEUUUUUQldH9B7o2VzelrKzVXN8td0X4vSo+riSKKKKKI+qUofQf/Pmqf+IJ88J9Rr/S4Ue1p5asCsbJ8gWH+CwExHq8DAAAAAAAAyM0ZkDomhL8B6mIAAAAASUVORK5CYII="
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <h1>
-      <span class="WAOS">NICH</span><span class="SER">ESDE</span
-      ><span class="VER">LUXE</span>
-    </h1>
 
-    <div class="container">
-      <div class="tabs-container">
-        <button class="tab" onclick="openTab('content1')">CONTENIDOS</button>
-        <button class="tab" onclick="openTab('content2')">TUTORIALES</button>
-        <button class="tab" onclick="openTab('content3')">EXTRA</button>
-      </div>
+<!DOCTYPE html>
+<html lang="es">
 
-      <div class="content" id="content1">
-        <h2><i>Archivos e Informacion Necesaria:</i></h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
 
-        <hr color="green" />
+<body>
+    <form action="procesamiento.php" method="post" class="Form">
+        <h1 class="decoracion1">Registrate En Nuestra Pagina</h1>
 
-        <ul id="linkList">
-          <li>
-            <h3>Minecraft Bedrock (v1.20.51):</h3>
+        <p class="decoracion2">
+            NOMBRE <br>
+            <input type="text" class="campo1" name="nombre" required oninvalid="this.setCustomValidity('Es obligatorio que introduzca su nombre.')" oninput="setCustomValidity('')">
+        </p>
 
-            <a
-              href="https://www.mediafire.com/file/prn21sivxfhoa1c/minecraft-1-20-51.apk/file"
-              class="pagina1"
-              target="_blank"
-              ><b>DESCARGAR</b></a
-            >
-          </li>
+        <p class="decoracion3">
+            EMAIL <br>
+            <input type="email" class="campo2" name="email" required oninvalid="this.setCustomValidity('Es obligatorio que introduzca su correo electronico (y asegurese de que este bien escrito.)')" oninput="setCustomValidity('')">
+        </p>
 
-          <hr color="green" />
+        <p class="decoracion4">
+            CONTRASEÑA <br>
+            <input type="password" class="campo3" name="password" required oninvalid="this.setCustomValidity('Es obligatorio que introduzca su contraseña.')" oninput="setCustomValidity('')">
+        </p>
 
-          <li>
-            <h3>Cliente Optimizado Bedrock (Red Dragon):</h3>
-            <a
-              href="https://www.mediafire.com/file/ac2mrgtrgs8kr2n/RDO1.mcpack/file"
-              class="pagina2"
-              target="_blank"
-              ><b>DESCARGAR</b></a
-            >
+        <p class="decoracion5">
+            CONFIRMAR CONTRASEÑA <br>
+            <input type="password" class="campo4" name="password" required oninvalid="this.setCustomValidity('Confirma tu contraseña.')" oninput="setCustomValidity('')">
+        </p>
 
-            <hr color="green" />
-          </li>
-          <h3>Informacion De Nuestro Servidor:</h3>
+        <p class="decoracion6">
+            EDAD <br>
+            <input type="number" class="campo5" name="edad" required oninvalid="this.setCustomValidity('Debes rellenar este campo obligatorio (sea honesto por favor).')" oninput="setCustomValidity('')">
+        </p>
 
-          <a
-            href="https://pastebin.com/nes4EVVp"
-            class="pagina3"
-            target="_blank"
-            ><b>IR AL SITIO</b></a
-          >
-        </ul>
-      </div>
+        <p class="decoracion7">SELECCIONA TU GENERO: </p>
 
-      <div class="content" id="content2" style="display: none">
-        <h2>Contenido de la Categoria 2</h2>
-        <p>Texto o elementos que deseas mostrar para la Categoria 2.</p>
-      </div>
+        <p class="decoracion8">FEMENINO <input type="radio" name="genero" value="femenino"></p>
 
-      <div class="content" id="content3" style="display: none">
-        <h2>Contenido de la Categoria 3</h2>
-        <p>Texto o elementos que deseas mostrar para la Categoria 3.</p>
-      </div>
-    </div>
+        <p class="decoracion9">MASCULINO <input type="radio" name="genero" value="masculino"></p>
 
-    <script src="logica.js"></script>
-  </body>
+        <p class="decoracion10">
+            <input type="submit" name="enviar" value="Enviar">
+        </p>
+    </form>
+</body>
+
 </html>
